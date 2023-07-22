@@ -148,6 +148,11 @@ a {
     color: #B8B8B8;
 }
 
+.input-block input:not(:focus):not(:placeholder-shown):invalid {
+    border: red 1px solid;
+}
+
+
 .input-block label {
     text-transform: uppercase;
     letter-spacing: 0.1rem;
