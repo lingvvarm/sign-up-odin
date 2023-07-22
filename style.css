@@ -1,0 +1,159 @@
+@font-face {
+    font-family: 'Norse Bolt';
+    src: url(fonts/Norse-Bold.otf);
+}
+
+:root {
+    --logo-font: 'Norse Bolt', sans-serif;
+    --general-font: 'Roboto', sans-serif;
+    --bg-color: #F5F5F5;
+    --fieldset-color: white;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.content {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    border: blue solid 2px;
+}
+
+.sidebar {
+    min-width: 35%;
+    border: red solid 2px;
+    background-image: url(./img/background.jpg);
+    background-size: 100% 100%;
+}
+
+
+.logo-bg {
+    background: rgba(0,0,0,0.7);
+    height: 150px;
+    position: relative;
+    top: 20vh;
+    left: 0;
+    padding: 1rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+.odin-logo {
+    height: 100%;
+}
+
+.logo-text {
+    color: white;
+    font-weight: bold;
+    font-size: 3.5rem;
+    font-family: var(--logo-font, 'sans-serif');
+}
+
+.right {
+    min-width: 65%;
+    display: flex;
+    flex-direction: column;
+    border: green 2px solid;
+    background-color: var(--bg-color);
+}
+
+.text-container {
+    padding: 2rem;
+    font-weight: 600;
+    margin-top: 5rem;
+    font-family: var(--general-font);
+}
+
+.text-container p:first-child {
+    margin-bottom: 1rem;
+}
+
+.form-inputs {
+    display: grid;
+    grid-template-columns: repeat(2, 20rem);
+    row-gap: 1rem;
+}
+
+.form-text {
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: var(--general-font);
+}
+
+label,
+input {
+    display: block;
+}
+
+.form-inputs,
+.form-text {
+    padding: 1rem 2rem;
+}
+
+fieldset {
+    background-color: var(--fieldset-color);
+    border: none;
+}
+
+.submit-btn {
+    font-family: var(--general-font);
+    width: 15rem;
+    margin-left: 2rem;
+    margin-top: 2rem;
+    padding: 1rem;
+    border: none;
+    background-color: #58A4B0;
+    color: white;
+    border-radius: 8px;
+    font-size: 1.3rem;
+}
+
+
+.submit-btn:hover {
+    background-color: #488E99;
+    cursor: pointer;
+}
+
+.submit-btn:active {
+    background-color: #3B747D;
+}
+
+a {
+    text-decoration: none;
+    color: #58A4B0;
+}
+
+.login-link {
+    margin-left: 2rem;
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    font-family: var(--general-font);
+}
+
+.input-block input {
+    height: 3rem;
+    width: 15rem;
+    padding: 22px 7px 7px;
+}
+
+.input-block input::placeholder {
+    color: #B8B8B8;
+}
+
+.input-block label {
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    font-size: 0.7rem;
+    margin-bottom: 0.2rem;
+    position: relative;
+    top: 22px;
+    left: 8px;
+}

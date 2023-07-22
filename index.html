@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Sign-up</title>
+</head>
+<body>
+    <div class="content">
+        <div class="sidebar">
+            <div class="logo-bg">
+                <img class="odin-logo" src="img/odin-logo.png" alt="odin-logo">
+                <div class="logo-text">Lambda</div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="text-container">
+                <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up now to get started.</p>
+                <p>You know you want to.</p>
+            </div>
+            <div class="form-container">
+                <form action="#" method="post">
+                    <fieldset>
+                        <!-- <legend>Let's do this!</legend> -->
+                        <div class="form-text">Let's do this!</div>
+                        <div class="form-inputs">
+                            <div class="input-block">
+                                <label for="first-name">First name</label>
+                                <input type="text" name="first-name" id="first-name" placeholder="John" minlength="3" maxlength="20">
+                            </div>
+                            <div class="input-block">
+                                <label for="last-name">Last name</label>
+                                <input type="text" name="last-name" id="last-name" placeholder="Doe" minlength="3" maxlength="20">
+                            </div>
+                            <div class="input-block">
+                                <label for="email">*Email</label>
+                                <input type="email" name="email" id="email" placeholder="example@gmail.com" required>
+                            </div>
+                            <div class="input-block">
+                                <label for="phone">Phone number</label>
+                                <input type="tel" name="phone" id="phone" placeholder="+380978612599">
+                            </div>
+                            <div class="input-block">
+                                <label for="password">*Password</label>
+                                <input type="password" name="password" id="password" required minlength="8" maxlength="20">
+                            </div>
+                            <div class="input-block">
+                                <label for="confirm">*Confirm password</label>
+                                <input type="password" name="confirm" id="confirm" required minlength="8" maxlength="20">
+                            </div>
+                        </div>
+                    </fieldset>
+                    <button class="submit-btn" type="submit">Create account</button>
+                </form>
+            </div>
+            <div class="login-link">
+                <p>Already have an account? <a href="#">Log in</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
